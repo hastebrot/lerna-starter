@@ -1,10 +1,9 @@
 {
-  "name": "@gmdev/button",
+  "name": "@acme/button",
   "version": "0.0.3",
   "description": "Example Button Component",
   "main": "dist/index.js",
   "module": "src/index.js",
-  "author": "Gary Meehan",
   "peerDependencies": {
     "react": "^16.8.6"
   },

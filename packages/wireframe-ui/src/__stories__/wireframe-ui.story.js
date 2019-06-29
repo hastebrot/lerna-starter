@@ -4,7 +4,7 @@ import { action } from "@storybook/addon-actions"
 
 import { Button, Counter } from "../"
 
-const stories = storiesOf("Wire Frame UI", module)
+const stories = storiesOf("Stories|Wireframe UI", module)
 
 stories
   .add("Default Button", () => (

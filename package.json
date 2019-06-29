@@ -1,9 +1,8 @@
 {
-  "name": "@gmdev/lerna-starter",
+  "name": "@acme/lerna-starter",
   "version": "0.0.1",
-  "description": "@gmdev is my dummy organisation to show scoped packages",
   "scripts": {
-    "storybook": "NODE_ENV=development start-storybook -p 9001 --ci",
+    "storybook": "NODE_ENV=development start-storybook -p 9001 --no-dll --ci",
     "prestart": "npm install && npm run build",
     "start": "npm-run-all --parallel storybook build:watch",
     "test": "jest --coverage",
@@ -18,16 +17,6 @@
     "postinstall": "npm run bootstrap",
     "fix": "prettier \"**/*.{js,jsx,json,md,mdx}\" --write"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/garmeeh/lerna-starter.git"
-  },
-  "author": "Gary Meehan",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/garmeeh/lerna-starter/issues"
-  },
-  "homepage": "https://github.com/garmeeh/lerna-starter/#readme",
   "devDependencies": {
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.5",

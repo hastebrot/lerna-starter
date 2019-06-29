@@ -4,7 +4,7 @@ import { action } from "@storybook/addon-actions"
 
 import Button from "../"
 
-const stories = storiesOf("Button", module)
+const stories = storiesOf("Stories|Button", module)
 
 stories.add("Standard Button", () => (
   <Button>

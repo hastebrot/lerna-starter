@@ -1,15 +1,19 @@
 import { load, addParameters } from "@storybook/react"
 import { themes } from "@storybook/theming"
-import { version } from "../package.json"
+import { name, version } from "../package.json"
 
 addParameters({
   options: {
-    name: "storybook",
+    name: `${name} v${version}`,
     theme: themes.light,
     showPanel: false,
     sidebarAnimations: false,
     isToolshown: true,
-    storySort: (story, otherStory) => story[1].id.localeCompare(otherStory[1].id),
+    storySort: (story, otherStory) => {
+      const compare = (string, otherString) =>
+        string.localeCompare(otherString, undefined, { caseFirst: "upper" })
+      return compare(story[1].id, otherStory[1].id)
+    },
   },
 })
 

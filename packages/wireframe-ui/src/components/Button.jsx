@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import styledMap from "styled-map"
-import Button from "@gmdev/button"
+import Button from "@acme/button"
 
 const StyledButton = styled.button`
   font-size: 16px;

@@ -3,7 +3,7 @@ import { storiesOf } from "@storybook/react"
 
 import Counter from ".."
 
-const stories = storiesOf("Counter", module)
+const stories = storiesOf("Stories|Counter", module)
 
 stories.add("Counter", () => (
   <Counter>

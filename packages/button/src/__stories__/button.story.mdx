@@ -1,12 +1,16 @@
 import { action } from "@storybook/addon-actions"
 import { Button } from "@storybook/react/demo"
-import { Story, Meta } from "@storybook/addon-docs/blocks"
+import { Meta, Preview, Story } from "@storybook/addon-docs/blocks"
 
-<Meta title="MDX|Button" />
+<Meta title="Documentation|Button" />
 
 # Hello Docs
 
 Welcome to the future of Storybook!
+
+<Preview>
+  <Button onClick={action("clicked")}>Hello button!</Button>
+</Preview>
 
 <Story name="hello">
   <Button onClick={action("clicked")}>Hello button!</Button>
